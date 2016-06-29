@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MyriadPro-Regular.otf");
+}
+
+header {
+  margin: 6px 40px 0 0;
+  h1 {
+    margin: 0;
+    float: right;
+    font-family: $font;
+    font-size: 81px;
+    font-weight: 700;
+    text-align: right;
+    color: $main-text-color;
+    text-transform: uppercase;
+    z-index: 1000;
+
+    span {
+      font-family: "Myriad Pro";
+      font-size: 60px;
+      position: relative;
+      bottom: 25px;
+      clear: both;
+    }
+  }
+}
+
+section {
+  clear: right;
+}
+
+@media only screen and (max-width : 1200px) {
+  header h1 {
+    font-size: 28pt;
+    margin-top: -10px;
+    span {
+      top: -12px;
+      font-size: 20pt;
+    }
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  header h1 {
+    position: relative;
+    bottom: 40px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  header h1 {
+    font-size: 18pt;
+    span {
+      top: -7px;
+      font-size: 12pt;
+    }
+  }
+}

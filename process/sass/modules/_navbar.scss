@@ -1,0 +1,59 @@
+#custom-bootstrap-menu.navbar-default {
+    font-size: 23.5px;
+    background-color: $white;
+    background-image: none;
+    box-shadow: none;
+    border-width: 0px;
+    border-radius: 0px;
+
+    margin: 72px 40px 0 40px;
+
+    .navbar-nav > li > a {
+      color: $main-text-color;
+      background-color: $white;
+      font-family: $font;
+      font-weight: lighter;
+      padding: 8px 12px;
+
+      &:hover, &:focus {
+        font-weight: 700;
+        border: 1px solid $main-text-color;
+        @include border-radius(30px);
+      }
+    }
+
+    .navbar-toggle {
+      border: none;
+      &:hover, &:focus {
+        background-color: $main-text-color;
+      }
+    }
+
+    .navbar-toggle .icon-bar {
+      background-color: $main-text-color;
+      height: 5px;
+      width: 30px;
+    }
+
+    .navbar-toggle:hover .icon-bar,
+    .navbar-toggle:focus .icon-bar {
+      background-color: $white;
+    }
+
+    .navbar-toggle.navbar-left {
+      float: left;
+      margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+  #custom-bootstrap-menu.navbar-default {
+    margin: 33px 7px 0 7px;
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  #custom-bootstrap-menu.navbar-default {
+    margin: 50px 25px 0 25px;
+  }
+}
