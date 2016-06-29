@@ -1,0 +1,20 @@
+{
+  "name": "coi-studio",
+  "description": "coi photo studio test project",
+  "main": "index.js",
+  "authors": [
+    "Andriy Luchko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Luchnik/coiStudio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

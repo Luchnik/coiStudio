@@ -1,0 +1,25 @@
+{
+  "name": "coi-studio",
+  "version": "1.0.0",
+  "description": "coi photo studio test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luchnik/coiStudio.git"
+  },
+  "author": "Andriy Luchko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luchnik/coiStudio/issues"
+  },
+  "homepage": "https://github.com/Luchnik/coiStudio#readme",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}
