@@ -2,6 +2,7 @@ div .title {
   border-top: 1px solid $main-text-color;
   padding: 0;
   margin: 0 25px;
+  clear: right;
 
   h2 {
     font-family: $font;
@@ -21,9 +22,78 @@ div .title {
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  button.btn {
+    display: none;
+    border: 1px solid $main-text-color;
+    width: 47px;
+    height: 15px;
+    background-color: $white;
+    @include border-radius(10px);
+    span {
+      position: relative;
+      bottom: 11px;
+      font-weight: bold;
+    }
+    &:hover {
+      background-color: $main-text-color;
+      color: $white;
+    }
+  }
+}
+
+.container-second {
+  margin-top: 45px;
+}
+
+div.bgimage {
+  //max-height: 190px;
+  padding: 0;
+  background: url(../images/4.jpg) no-repeat center center;
+  background-size: 100% auto;
+  height: 400px;
+}
+
+div.people {
+
+  height: 400px;
+  padding: 0;
+
+  div.icon:first-child {
+    margin-left: 40px;
+  }
+
+  .icon {
+    float: left;
+    position: relative;
+    top: 133px;
+    margin-left: 10px;
+    text-align: center;
+
+    p.desc {
+      padding-top: 6px;
+      color: $main-text-color;
+      font-family: $font;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width : 1290px) {
+  .icon {
+    img {
+      height: 80px;
+    }
+  }
 }
 
 @media only screen and (max-width : 1200px) {
+  .container-second {
+    margin-top: 0px;
+  }
   div .title {
     h2 {
       font-size: 28pt;
@@ -35,13 +105,65 @@ div .title {
   }
 }
 
+@media only screen and (max-width : 992px) {
+  div.people {
+    height: 200px;
+
+    div.icon:first-child {
+      margin-left: 80px;
+    }
+
+    .icon {
+      top: 40px;
+    }
+  }
+}
+
 @media only screen and (max-width : 767px) {
+  div.people {
+    height: 120px;
+
+    div.icon:first-child {
+      margin-left: 25px;
+    }
+
+    .icon {
+      top: 20px;
+      margin-left: 5px;
+      img {
+        height: 50px;
+      }
+      p.desc {
+        font-size: 10px;
+      }
+    }
+  }
+
   div .title {
     margin-top: -40px;
+
+    button.btn {
+      display: block;
+    }
   }
 }
 
 @media only screen and (max-width : 480px) {
+  div.people {
+    height: 100px;
+
+    div.icon:first-child {
+      margin-left: 10px;
+    }
+
+    .icon {
+      top: 15px;
+      p.desc {
+        font-size: 5pt;
+      }
+    }
+  }
+
   div .title {
     h2 {
       font-size: 18pt;
@@ -51,5 +173,11 @@ div .title {
     p {
       font-size: 5pt;
     }
+
+  }
+
+  div.bgimage {
+    margin-top: -7px;
+    max-height: 190px;
   }
 }
