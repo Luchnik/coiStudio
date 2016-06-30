@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MyriadPro-Regular.otf");
+}
+
+.sliding {
+
+  position: relative;
+  left: 40px;
+  bottom: 370px;
+
+  #btn-slide {
+    font-family: "Myriad Pro";
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 24pt;
+    width: 225px;
+    border: 1px solid $black;
+    color: $main-text-color;
+    background-color: $white;
+    @include border-radius(20px);
+    margin-bottom: 20px;
+
+    &:hover {
+      color: $white;
+      background-color: $main-text-color;
+    }
+  }
+
+  #slideTarget {
+    width: 600px;
+    height: 300px;
+
+    form {
+
+      label {
+        font-family: "Myriad Pro";
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 24pt;
+        color: $yellow;
+      }
+
+      input[type=text] {
+        width: 100%;
+        padding: 6px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid $black;
+        @include border-radius(20px);
+        box-sizing: border-box;
+        color: $black;
+        font-size: 20pt;
+      }
+
+      input[type=submit] {
+        margin-top: 15px;
+        font-family: "Myriad Pro";
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 24pt;
+        width: 225px;
+        border: 1px solid $black;
+        color: $main-text-color;
+        background-color: $white;
+        @include border-radius(20px);
+        cursor: pointer;
+
+        &:hover {
+          color: $white;
+          background-color: $main-text-color;
+        }
+
+      }
+
+    } // form
+
+  }
+}
+
+@media only screen and (max-width : 1290px) {
+  .sliding {
+    left: 40px;
+    bottom: 170px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .sliding {
+    left: 40px;
+    bottom: 20px;
+
+    #btn-slide {
+      font-size: 18pt;
+      width: 165px;
+      margin-bottom: 20px;
+    }
+
+    #slideTarget {
+      width: 370px;
+      form {
+        label {
+          font-size: 16pt;
+          color: $yellow;
+        }
+        input[type=text] {
+          padding: 3px 20px;
+          font-size: 16pt;
+        }
+        input[type=submit] {
+          margin-top: 15px;
+          font-size: 18pt;
+          width: 185px;
+        }
+      } // form
+    }
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+  .sliding {
+    left: 20px;
+    bottom: -10px;
+
+    #btn-slide {
+      font-size: 12pt;
+      width: 165px;
+      margin-bottom: 10px;
+    }
+
+    #slideTarget {
+      width: 180px;
+      form {
+        label {
+          font-size: 10pt;
+          color: $yellow;
+        }
+        input[type=text] {
+          padding: 3px 20px;
+          font-size: 10pt;
+        }
+        input[type=submit] {
+          margin-top: 10px;
+          font-size: 12pt;
+          width: 185px;
+        }
+      } // form
+    }
+  }
+
+}

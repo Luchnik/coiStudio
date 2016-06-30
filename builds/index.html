@@ -110,7 +110,7 @@
   </div> <!-- end row -->
 
   <div class="container-fluid">
-    <div class="row">
+    <div class="row row-big">
       <div class="col-md-6 col-sm-6 greybg">
         <img src="images/5.jpg" height="390" alt="photo-tools">
       </div>
@@ -123,10 +123,41 @@
     </div> <!-- end row -->
   </div> <!-- end container-fluid -->
 
-  <button type="button" id="btn-slide">Замовити</button>
+    <div class="sliding">
+      <button type="button" id="btn-slide">Замовити &#8628;</button>
+      <div id="slideTarget">
+
+        <form action="">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="firstname">
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lastname">
+
+          <input type="submit" value="Піідтвердити">
+        </form>
+
+      </div>
+    </div>
+
+<!--
+  <div class="container-fluid" style="position: relative; bottom: 195px">
+    <div class="col-md-6">
+      <div class="rules" style="height: 300px; background-color: green">Test test test</div>
+    </div>
+    <div class="col-md-6 ">
+      <div class="map" style="height: 300px; background-color: blue">Test test test</div>
+    </div>
+  </div> -->
+
+<!--
+  <div class="row" style="position: relative; top: 20px">
+    <div class="footer" style="height: 185px; background-color: yellow">Test test test</div>
+  </div>-->
 
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/sliding.js"></script>
 </body>
 </html>
