@@ -51,6 +51,10 @@ div.bgimage {
   background: url(../images/4.jpg) no-repeat center center;
   background-size: 100% auto;
   height: 400px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 div.people {
@@ -68,6 +72,14 @@ div.people {
     top: 133px;
     margin-left: 10px;
     text-align: center;
+    cursor: pointer;
+
+    img:hover {
+      -webkit-filter: hue-rotate(180deg);
+      -moz-filter: hue-rotate(180deg);
+      -o-filter: hue-rotate(180deg);
+      filter: hue-rotate(180deg);
+    }
 
     p.desc {
       padding-top: 6px;

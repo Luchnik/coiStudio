@@ -1,0 +1,108 @@
+.row-footer {
+  position: relative;
+  top: 20px;
+
+  div.footer {
+    height: 185px;
+    background: url(../images/trees-footer.jpg) no-repeat center center;
+    background-size: 100% auto;
+    width: 100%;
+
+    h3 {
+      font-family: $font;
+      font-size: 42px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $white;
+      margin: 0 0 70px 40px;
+      padding-top: 14px;
+    }
+
+    p {
+      font-family: $font;
+      font-size: 20px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      color: $white;
+      margin: -15px 0 0 40px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width : 1200px) {
+  .row-footer {
+    div.footer {
+      height: 155px;
+      h3 {
+        font-size: 24px;
+        margin: 0 0 50px 40px;
+        padding-top: 24px;
+      }
+
+      p {
+        font-size: 18px;
+        margin: -15px 0 0 40px;
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .row-footer {
+    div.footer {
+      height: 135px;
+      h3 {
+        font-size: 24px;
+        margin: 0 0 50px 40px;
+        padding-top: 24px;
+      }
+
+      p {
+        font-size: 10px;
+        margin: -15px 0 0 40px;
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .row-footer {
+    div.footer {
+      height: 90px;
+      h3 {
+        font-size: 16px;
+        margin: 0 0 20px 40px;
+        padding-top: 12px;
+      }
+
+      p {
+        font-size: 10px;
+        margin: 0px 0 0 40px;
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .row-footer {
+    div.footer {
+      height: 40px;
+      h3 {
+        font-size: 10px;
+        margin: 0 0 10px 40px;
+        padding-top: 5px;
+      }
+
+      p {
+        font-size: 5px;
+        margin: -10px 0 0 40px;
+      }
+
+    }
+  }
+}

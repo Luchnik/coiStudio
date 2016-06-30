@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MyriadPro-Regular.otf");
+}
+
+
+div.maprules {
+  position: relative;
+  bottom: 195px;
+
+  #googleMap {
+    width:640px;
+    height:400px;
+  }
+
+  .rules {
+    height: 400px;
+    padding: 130px 0 0 30px;
+
+    h3 {
+      margin: 0;
+      color: $main-text-color;
+      font-family: $font;
+      font-weight: lighter;
+      font-size: 46px;
+    }
+
+    ul {
+      margin-left: -15px;
+      li {
+        font-family: "Myriad Pro";
+        font-size: 24px;
+        color: $main-text-color;
+        &:first-child {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width : 1200px) {
+  div.maprules {
+    bottom: 125px;
+
+    #googleMap {
+      width:440px;
+      height:200px;
+    }
+
+    .rules {
+      width:440px;
+      height: 200px;
+      padding: 20px 0 0 30px;
+
+      h3 {
+        text-align: center;
+        font-size: 26px;
+      }
+      ul {
+        li {
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  div.maprules {
+    bottom: 125px;
+
+    #googleMap {
+      width:640px;
+      height:300px;
+    }
+
+    .rules {
+      height: 180px;
+      h3 {
+        text-align: center;
+        font-size: 26px;
+      }
+      ul {
+        li {
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width : 767px) {
+  div.maprules {
+    bottom: 5px;
+
+    #googleMap {
+      width:440px;
+      height:200px;
+    }
+
+    .rules {
+      height: 200px;
+      padding: 20px 0 0 10px;
+
+      h3 {
+        text-align: center;
+        font-size: 26px;
+      }
+      ul {
+        li {
+          list-style-type: none;
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  div.maprules {
+    bottom: -10px;
+
+    #googleMap {
+      width:250px;
+      height:200px;
+    }
+
+    .rules {
+      height: 100px;
+      width: 250px;
+      padding: 20px 0 0 0;
+      margin-right: 0;
+
+      h3 {
+        text-align: center;
+        font-size: 10pt;
+      }
+      ul {
+        li {
+          list-style-type: none;
+          text-align: center;
+          font-size: 5pt;
+        }
+      }
+    }
+  }
+}
