@@ -1,0 +1,236 @@
+div.bg {
+  background: url(../images/trees.jpg) no-repeat center center;
+  background-size: 100% auto;
+  width: 100%;
+  margin-top: 105px;
+  height: 800px;
+
+  div.text {
+    margin: 0;
+    padding-right: 40px;
+    text-align: right;
+
+    h2 {
+      font-family: $font;
+      font-size: 60px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $yellow;
+
+      span {
+        color: $white;
+      }
+    }
+
+    p {
+      color: $white;
+      margin-top: 70px;
+      font-family: $font;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    button.btn-second {
+      display: none;
+      border: 1px solid $white;
+      width: 47px;
+      height: 15px;
+      color: $white;
+      background-color: transparent;
+      @include border-radius(10px);
+      span.second-arrow {
+        position: relative;
+        bottom: 7px;
+        font-weight: bold;
+      }
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+
+  }
+
+}
+
+div.col-md-6.greybg {
+  position: relative;
+  bottom: 425px;
+  padding: 0 40px;
+}
+
+div.col-md-6.photos {
+  position: relative;
+  bottom: 245px;
+  padding: 0;
+
+  h3 {
+    font-family: $font;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+    margin-top: 16px;
+  }
+  img {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  div.bg {
+    margin-top: 27px;
+    height: 615px;
+    div.text {
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        margin-top: 15px;
+        font-size: 10pt;
+      }
+    }
+  }
+
+  div.col-md-6.greybg {
+    bottom: 250px;
+    img {
+      height: 230px;
+    }
+  }
+
+  div.col-md-6.photos {
+    bottom: 155px;
+    h3 {
+      font-size: 28pt;
+    }
+    img {
+      margin-left: 40px;
+      height: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  div.bg {
+    margin-top: 17px;
+    height: 415px;
+    div.text {
+      h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+      p {
+        margin-top: 15px;
+        font-size: 10pt;
+        text-align: left;
+        span.delete {
+          display: none;
+        }
+      }
+    }
+  }
+
+  div.col-md-6.greybg {
+    bottom: 210px;
+    img {
+      height: 200px;
+    }
+  }
+
+  div.col-md-6.photos {
+    bottom: 135px;
+    h3 {
+      font-size: 28pt;
+    }
+    img {
+      margin-left: 18px;
+      height: 60px;
+    }
+  }
+
+}
+
+@media only screen and (max-width : 767px) {
+  div.bg {
+    margin-top: 27px;
+    height: 315px;
+    div.text {
+      margin-left: 25px;
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  div.col-md-6.greybg {
+    bottom: 75px;
+    img {
+      height: 70px;
+    }
+  }
+
+  div.col-md-6.photos {
+    bottom: 75px;
+    h3 {
+      font-size: 28pt;
+      color: $black;
+    }
+    img {
+      margin-left: 45px;
+      height: 60px;
+    }
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+  div.bg {
+    margin-top: 0;
+    height: 210px;
+    div.text {
+      margin-left: 10px;
+      h2 {
+        font-size: 18pt;
+      }
+      p {
+        margin-top: 15px;
+        font-size: 5pt;
+        span.delete {
+          display: none;
+        }
+      }
+      button.btn-second {
+        display: block;
+      }
+    }
+  }
+
+  div.col-md-6.greybg {
+    bottom: 40px;
+    img {
+      height: 140px;
+    }
+  }
+
+  div.col-md-6.photos {
+    position: static;
+    h3 {
+      margin-top: -30px;
+      margin-bottom: 5px;
+      font-size: 18pt;
+      color: $black;
+    }
+    img {
+      margin-left: 10px;
+      height: 50px;
+    }
+  }
+
+
+}

@@ -47,7 +47,6 @@ div .title {
 }
 
 div.bgimage {
-  //max-height: 190px;
   padding: 0;
   background: url(../images/4.jpg) no-repeat center center;
   background-size: 100% auto;
@@ -153,13 +152,14 @@ div.people {
     height: 100px;
 
     div.icon:first-child {
-      margin-left: 10px;
+      margin-left: 15px;
     }
 
     .icon {
       top: 15px;
+      margin-left: 20px;
       p.desc {
-        font-size: 5pt;
+        display: none;
       }
     }
   }
